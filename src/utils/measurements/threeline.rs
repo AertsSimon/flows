@@ -11,7 +11,7 @@ struct ThreeLine(f32, f32, f32);
 impl ThreeLine {
     // NOTE: maybe it is useful to change this self instead of &self
     fn abs(&self) -> ThreeLine {
-        ThreeLine(self.0, self.1, self.2)
+        ThreeLine(self.0.abs(), self.1.abs(), self.2.abs())
     }
 }
 
